@@ -1,0 +1,80 @@
+.pattern {
+    height: 50vh;
+    position: relative;
+    background: linear-gradient(276.18deg, #6E28B1 0%, rgba(0, 0, 0, 0) 100%), #FC0A7E;
+}
+
+.pattern__inner {
+    background-image: url('../img/pattern.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern__title {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.pattern__btn_right {
+    all: unset;
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white);
+    padding: 20px 40px;
+    background: var(--pink);
+    border-radius: 3px;
+    cursor: pointer;
+
+
+}
+
+.pattern__btn_left {
+    all: unset;
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white);
+    padding: 20px 40px;
+    border: 1px solid #B04BB3;
+    cursor: pointer;
+
+}
+ 
+
+.pattern__inner_btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .pattern__inner_btn-wrap {
+        flex-direction: column;
+    }
+
+    .pattern__inner_text {
+        max-width: 350px;
+        text-align: center;
+    }
+}

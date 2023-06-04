@@ -1,0 +1,38 @@
+.footer {
+    height: 30vh;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav_link a {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--darkgrey);
+}
+
+.footer__nav_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media screen and (max-width:375px) {
+    .footer__nav_list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}

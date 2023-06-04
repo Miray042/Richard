@@ -1,0 +1,92 @@
+.quote {
+    height: 50vh;
+    position: relative;
+    padding-top: 120px;
+    margin-bottom: 102px;
+}
+
+.comma {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.quote__slider {
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.quote__text {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--darkgrey);
+    max-width: 700px;
+}
+
+.quote__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.quote__cite {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quote__score {
+    width: 30px;
+    height: 1px;
+    background: #D3D3D3;
+}
+
+.quote__name {
+
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--darkgrey);
+}
+
+.quote__city {
+    font-family: var(--GB);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--darkgrey);
+}
+
+
+
+@media screen and (max-width:992px) {
+    .quote__slider {
+        bottom: -150px;
+    }
+
+    .quote {
+        margin-bottom: 200px;
+    }
+}
+
+
+
+@media screen and (max-width:375px) {
+    .quote {
+        margin-bottom: 400px;
+    }
+
+    .quote__slider {
+        bottom: -250px;
+    }
+}

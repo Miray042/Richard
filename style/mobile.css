@@ -1,0 +1,64 @@
+.mobile__caption {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+.mobile__title {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black);
+}
+
+.mobile__desc {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--darkgrey);
+}
+
+.mobile__text {
+    max-width: 306px;
+}
+
+
+.mobile__card {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .mobile__card {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .mobile__text {
+       max-width: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .mobile__card img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .mobile__card img {
+        width: 300px;
+    }
+}

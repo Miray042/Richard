@@ -1,0 +1,17 @@
+
+.partner__wrap {
+    text-align: center;
+}
+
+.partner {
+    height: 115px;
+    margin-bottom: 80px;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .partner {
+        display: none;
+    }
+}

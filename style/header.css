@@ -1,0 +1,146 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+    position: relative;
+    z-index: 1;
+}
+
+.header__bg {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 44px;
+}
+
+.header__arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__content_text {
+    max-width: 677px;
+}
+
+.nav__list_item a {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+}
+
+.header__content_title {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.header__content_desc {
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.header__content_btn {
+    all: unset;
+    font-family: var(--GR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white);
+    background: var(--pink);
+    border-radius: 3px;
+    padding: 20px 40px;
+    cursor: pointer;
+
+}
+
+
+.header__content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .header__content_text {
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .header__bg {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .header__bg {
+        display: none;
+    }
+    .header__arrow {
+        display: none;
+    }
+
+    .header__content_title {
+        font-size: 50px;
+    }
+
+    .header__content_desc {
+        font-size: 15px;
+    }
+
+    .header__wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header {
+        height: 80vh;
+    }
+
+    .header__content {
+        height: 50vh;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .header__arrow {
+        display: none;
+    }
+}
